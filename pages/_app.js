@@ -11,11 +11,9 @@ const poppins = Poppins({
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
-      <main className={`${poppins.variable}`}>
-        <Component {...pageProps} />
-      </main>
-    </ThemeProvider>
+    <main className={`${poppins.variable}`}>
+      <Component {...pageProps} />
+    </main>
   );
 }
 
