@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,700");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,4 +8,8 @@
   body {
     @apply dark:bg-trueGray-900;
   }
+}
+
+.class {
+  font-family: var(--font-poppins);
 }
