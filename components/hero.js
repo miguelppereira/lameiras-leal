@@ -10,7 +10,7 @@ const Hero = () => {
       <Container className="flex flex-wrap bg-lightBlue max-w-full">
         <div className="flex items-center w-full lg:pl-20 lg:w-1/2">
           <div className="max-w-2xl mb-8 pt-6">
-            <h1 className="text-4xl font-bold text-white leading-snug tracking-tight text-gray-800 lg:text-xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white">
+            <h1 className="text-4xl text-white leading-snug tracking-tight text-gray-800 lg:text-xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white">
               Serviço de contabilidade através de aconselhamento
               fiscal,estratégico <br /> e financeiro.
               <span>
