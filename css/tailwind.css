@@ -3,13 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html,
-  body {
-    @apply dark:bg-trueGray-900;
-  }
-}
-
 .class {
   font-family: var(--font-poppins);
 }
