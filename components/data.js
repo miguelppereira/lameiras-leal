@@ -15,7 +15,7 @@ const benefitOne = {
     },
     {
       title: "Processamento de Salários",
-      desc: "Recibos de Vencimento, Folhas de Remuneração e guias de pagamento à Segurança Social.",
+      desc: "Recibos de vencimento, folhas de Remuneração e inscrição na Segurança Social.",
     },
   ],
 };
