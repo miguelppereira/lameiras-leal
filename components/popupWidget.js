@@ -51,7 +51,7 @@ const PopupWidget = () => {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="fixed z-40 flex items-center justify-center transition duration-300 bg-lightBlue rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-black ease">
+            <Disclosure.Button className="fixed z-40 flex items-center justify-center transition duration-300 bg-lightBlue rounded-full shadow-lg right-5 bottom-5 w-14 h-14 focus:outline-none hover:bg-cyanBlue ease">
               <span className="sr-only">Contacta-nos</span>
               <Transition
                 show={!open}

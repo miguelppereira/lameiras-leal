@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         trueGray: colors.neutral,
         lightBlue: "#9EBDC9",
+        cyanBlue: "#46999E",
       },
     },
     fontFamily: {

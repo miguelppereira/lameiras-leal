@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link
             href="#right"
-            className="px-6 py-2 text-white bg-lightBlue rounded-md md:ml-5"
+            className="px-6 py-2 text-white bg-lightBlue rounded-md md:ml-5 hover:bg-cyanBlue"
           >
             Contacta-nos
           </Link>
