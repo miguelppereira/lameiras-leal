@@ -32,10 +32,10 @@ const Home = () => {
       >
         A nossa missão é oferecer uma base sólida e serviços abrangentes que
         possibilitem aos empreendedores navegar com confiança no cenário
-        contabilistico, empresarial e fiscal{" "}
-        <span className="text-lightBlue">português</span>. Com localização na
-        área metropolitana de <span className="text-lightBlue">Lisboa</span>,
-        possuimos um vasto conhecimento e experiência, cujo foco é fornecer
+        contabilístico, empresarial e fiscal{" "}
+        <span className="text-cyanBlue">português</span>. Com localização na
+        área metropolitana de <span className="text-cyanBlue">Lisboa</span>,
+        possuímos um vasto conhecimento e experiência, cujo foco é fornecer
         serviços personalizados a cada cliente.
       </SectionTitle>
       <Benefits data={benefitOne} />

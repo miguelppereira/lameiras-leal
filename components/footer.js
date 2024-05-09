@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0"></div>
           </div>
           <div className="">
-            <div className="text-lightBlue text-l font-medium">Segue-nos</div>
+            <div className="text-cyanBlue text-l font-medium">Segue-nos</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
                 href="https://www.facebook.com/p/Gabinete-de-Contabilidade-Lameiras-Leal-Lda-100089997417549/"
