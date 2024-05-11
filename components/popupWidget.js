@@ -109,7 +109,7 @@ const PopupWidget = () => {
               leave="transition duration-200 transform ease"
               leaveTo="opacity-0 translate-y-5"
             >
-              <Disclosure.Panel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
+              <Disclosure.Panel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[300px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-lightBlue">
                   <h3 className="text-lg text-white">Como podemos ajuda-lo?</h3>
                 </div>
@@ -118,17 +118,12 @@ const PopupWidget = () => {
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
                       <input
                         type="hidden"
-                        value="YOUR_ACCESS_KEY_HERE"
+                        value="8a467392-4180-444b-b120-17dd7f8b20c6"
                         {...register("apikey")}
                       />
                       <input
                         type="hidden"
-                        value={`${userName} sent a message from Nextly`}
-                        {...register("subject")}
-                      />
-                      <input
-                        type="hidden"
-                        value="Nextly Template"
+                        value="Enviado do site"
                         {...register("from_name")}
                       />
                       <input
@@ -202,6 +197,35 @@ const PopupWidget = () => {
 
                       <div className="mb-4">
                         <label
+                          htmlFor="email"
+                          className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                        >
+                          Assunto
+                        </label>
+                        <input
+                          type="text"
+                          id="subject"
+                          {...register("subject", {
+                            required: "Por favor, coloque o assunto",
+                            maxLength: 80,
+                          })}
+                          placeholder="Insira o assunto"
+                          className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md focus:outline-none focus:ring   ${
+                            errors.subject
+                              ? "border-red-600 focus:border-red-600 ring-red-100"
+                              : "border-gray-300 focus:border-lightBlue ring-indigo-100"
+                          }`}
+                        />
+
+                        {errors.subject && (
+                          <div className="mt-1 text-sm text-red-400 invalid-feedback">
+                            {errors.subject.message}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="mb-4">
+                        <label
                           htmlFor="message"
                           className="block mb-2 text-sm text-gray-600 dark:text-gray-400"
                         >
@@ -214,7 +238,7 @@ const PopupWidget = () => {
                           {...register("message", {
                             required: "Por favor, coloque a sua mensagem.",
                           })}
-                          placeholder="A sua mensagem"
+                          placeholder="Escreva aqui a sua mensagem"
                           className={`w-full px-3 py-2 text-gray-600 placeholder-gray-300 bg-white border border-gray-300 rounded-md h-28 focus:outline-none focus:ring   ${
                             errors.message
                               ? "border-red-600 focus:border-red-600 ring-red-100"
@@ -255,7 +279,7 @@ const PopupWidget = () => {
                               ></path>
                             </svg>
                           ) : (
-                            "Send Message"
+                            "Enviar mensagem"
                           )}
                         </button>
                       </div>

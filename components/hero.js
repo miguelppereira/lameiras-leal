@@ -2,7 +2,6 @@ import Image from "next/image";
 import Container from "./container";
 import heroImg from "../public/img/hero.svg";
 import rectangle from "../public/img/rectangle.svg";
-import portugal from "../public/img/portugal.svg";
 
 const Hero = () => {
   return (
