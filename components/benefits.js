@@ -70,7 +70,7 @@ function mapsWidget() {
         id="gmap_canvas"
         src="https://maps.google.com/maps?width=382&amp;height=421&amp;hl=en&amp;q=R.%20Cidade%20de%20Pinhel%2012A%20Barreiro+(Gabinete)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
       ></iframe>{" "}
-      <a href="https://www.pferdeversicherung.at/pferdekrankenversicherung/">
+      <a className="text-white" href="https://www.pferdeversicherung.at/pferdekrankenversicherung/">
         Pferde Krankenversicherung
       </a>{" "}
       <script
