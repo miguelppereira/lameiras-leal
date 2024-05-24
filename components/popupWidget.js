@@ -31,17 +31,17 @@ const PopupWidget = () => {
         let json = await response.json();
         if (json.success) {
           setIsSuccess(true);
-          setMessage(json.message);
+          setMessage("Prometemos ser breves.");
           e.target.reset();
           reset();
         } else {
           setIsSuccess(false);
-          setMessage(json.message);
+          setMessage("Pedimos desculpa.");
         }
       })
       .catch((error) => {
         setIsSuccess(false);
-        setMessage("Client Error. Please check the console.log for more info");
+        setMessage("ERRO");
         console.log(error);
       });
   };
@@ -320,14 +320,14 @@ const PopupWidget = () => {
                           />
                         </svg>
                         <h3 className="py-5 text-xl text-green-500">
-                          Message sent successfully
+                          Mensagem enviado com sucesso, prometemos ser breves.
                         </h3>
                         <p className="text-gray-700 md:px-3">{Message}</p>
                         <button
                           className="mt-6 text-lightBlue focus:outline-none"
                           onClick={() => reset()}
                         >
-                          Go back
+                          Voltar atrás
                         </button>
                       </div>
                     </>
@@ -351,7 +351,7 @@ const PopupWidget = () => {
                       </svg>
 
                       <h3 className="text-xl text-red-400 py-7">
-                        Oops, Something went wrong!
+                        Algo correu mal, volte a tentar.
                       </h3>
                       <p className="text-gray-700 md:px-3">{Message}</p>
                       <button
